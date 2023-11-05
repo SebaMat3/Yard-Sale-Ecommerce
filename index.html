@@ -4,27 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Document</title>
-    <style>
-        :root{
-            --white: #FFFFFFF;
-            --very-light-pink: #C7C7C7;
-            --white: #FFFFFF;
-            --text-input-field: #F7F7F7;
-            --black: #000000;
-            --hospital-green: #ACD9B2;
-        }
-        body{
-            font-family: 'Quicksand', sans-serif;
-        }
+    <link rel="stylesheet" href="styles.css">
 
-    </style>
+    <title>YardSale: Get price & taste</title>
 </head>
 <body>
-
-    
+    <nav>
+        <img src="/assets/icons/icon_menu.svg" alt="menu" class="menu">
+        <div class="navbar-left">
+            <img src="/assets/logos/logo_yard_sale.svg" class="logo" alt="logo" >
+            <ul>
+                <li><a href="">All</a></li>
+                <li><a href="">Clothes</a></li>
+                <li><a href="">Electronics</a></li>
+                <li><a href="">Furniture</a></li>
+                <li><a href="">Toys</a></li>
+                <li><a href="">Others</a></li>
+            </ul>
+        </div>
+            <div class="navbar-right">
+                <ul>
+                    <li class="navbar-email">camilayokoo@gmail.com</li>
+                    <li class="navbar-shopping-cart">
+                        <img src="/assets/icons/icon_shopping_cart.svg" alt="shopping cart">
+                        <div>2</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="desktop-menu inactive">
+                <ul>
+                    <li>
+                        <a href="/" class="orders">My orders</a>
+                    </li>
+                    <li>
+                        <a href="/" class="account">My account</a>                
+                    </li>
+                    <li>
+                        <a href="/" class="signout">Sign out</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <script src="./script.js"></script>
 </body>
 </html>
