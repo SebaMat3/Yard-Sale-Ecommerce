@@ -172,6 +172,86 @@ nav {
     margin-top: 30%;
 }
 
+/*Aside (shopping cart)*/
+.product-details {
+    /*the width of a whole mobile screen*/
+    width: 360px;
+    padding: 24px;
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
+}
+.title-container {
+    display: flex;
+}
+.title-container img {
+    transform: rotate(180deg);
+    margin-right: 14px;
+}
+.title {
+    font-size: var(--lg);
+    font-weight: bold;
+}
+.order {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+    background-color: var(--text-input-field);
+    /* distance from the product cards*/
+    margin-bottom: 24px; 
+    border-radius: 8px;
+    /* Text distance from the left side*/
+    padding: 0 24px; 
+}
+.order p:nth-child(1) {
+    font-size: var(--md);
+    font-weight: bold;
+}
+.order p:nth-child(2) { 
+    text-align: end;
+    font-weight: bold;
+}
+.shopping-cart {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 16px;	
+    object-fit: cover;
+    margin-bottom: 24px;
+    align-items: center;
+}
+.shopping-cart figure{
+    margin: 0; 
+}
+.shopping-cart figure img {
+    object-fit: cover; 
+}
+.shopping-cart figure img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+}
+
+.shopping-cart p:nth-child(2) {
+/* styling the different article descriptions <p> */
+    color: var(--very-light-pink);
+}
+.shopping-cart p:nth-child(3) {
+    font-size: var(--md);
+    font-weight: bold;
+}
+.primary-button {
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
 /* Media queries*/
 @media (max-width: 640px){
     .menu {
@@ -181,6 +261,9 @@ nav {
     .navbar-left ul,
     .navbar-email {
         display: none;
+    }
+    .product-details {
+        width: 100%;
     }
 
 }
