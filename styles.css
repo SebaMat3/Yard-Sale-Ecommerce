@@ -101,6 +101,7 @@ nav {
     position: absolute;
     top: 60px;
     right: 60px;
+    background-color: var(--white);
 }
 .desktop-menu ul {
     list-style: none;
@@ -135,6 +136,7 @@ nav {
     padding: 24px;
     position: absolute; 
     top: 60px;
+    background-color: var(--white);
 }
 .mobile-menu a {
     text-decoration: none;
@@ -176,10 +178,11 @@ nav {
 .product-details {
     /*the width of a whole mobile screen*/
     width: 360px;
-    padding: 24px;
+    padding: 0 24px;
     position: absolute;
     right: 0;
     box-sizing: border-box;
+    background-color: var(--white);
 }
 .title-container {
     display: flex;
@@ -198,7 +201,7 @@ nav {
     gap: 16px;
     align-items: center;
     background-color: var(--text-input-field);
-    /* distance from the product cards*/
+    /* Distance between the product cards*/
     margin-bottom: 24px; 
     border-radius: 8px;
     /* Text distance from the left side*/
@@ -231,7 +234,6 @@ nav {
     height: 70px;
     border-radius: 20px;
 }
-
 .shopping-cart p:nth-child(2) {
 /* styling the different article descriptions <p> */
     color: var(--very-light-pink);
@@ -252,6 +254,49 @@ nav {
     height: 50px;
 }
 
+/*Home - Product cards*/
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 26px;
+    place-content: center;
+    margin-top: 20px;
+}
+.product-card {
+    width: 240px;
+}
+.product-card img {
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+.product-info figure img {
+    width: 35px;
+    height: 35px;
+}
+.product-info figure {
+    margin: 0;
+}
+.product-info div p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.product-info div p:nth-child(2){
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--very-light-pink);
+}
+
 /* Media queries*/
 @media (max-width: 640px){
     .menu {
@@ -264,6 +309,17 @@ nav {
     }
     .product-details {
         width: 100%;
+    }
+    /*Home - Product cards*/
+    .cards-container {
+        grid-template-columns: repeat(auto-fill, 140px);
+    }
+    .product-card {
+        width: 140px;
+    }
+    .product-card img {
+        width: 140px;
+        height: 140px;
     }
 
 }
